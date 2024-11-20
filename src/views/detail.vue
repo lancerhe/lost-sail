@@ -27,13 +27,13 @@
       <p class="str">{{ detailCardTreeStr }}</p>
       <p @click="copy('JNJieni888')" class="copy">迷航代打联系WX: JNJieni888 (点击复制)</p>
       <p @click="copy('C2022129')" class="copy">迷航代打联系WX: C2022129 (点击复制)</p>
-<!--      <p @click="copy('yeah852019')" class="copy">迷航代打联系WX: yeah852019 (点击复制)</p>-->
+      <!--      <p @click="copy('yeah852019')" class="copy">迷航代打联系WX: yeah852019 (点击复制)</p>-->
       <p @click="copy('xhk840144874')" class="copy">迷航代打联系WX: xhk840144874 (点击复制)</p>
-<!--      <p @click="copy('Frown2024')" class="copy">迷航代打联系WX: Frown2024 (点击复制)</p>-->
-<!--      <p @click="copy('hy-Lib-Oct-05')" class="copy">迷航代打联系WX: hy-Lib-Oct-05 (点击复制)</p>-->
-<!--      <p @click="copy('Wwq24104177')" class="copy">迷航代打联系WX: Wwq24104177 (点击复制)</p>-->
+      <!--      <p @click="copy('Frown2024')" class="copy">迷航代打联系WX: Frown2024 (点击复制)</p>-->
+      <!--      <p @click="copy('hy-Lib-Oct-05')" class="copy">迷航代打联系WX: hy-Lib-Oct-05 (点击复制)</p>-->
+      <!--      <p @click="copy('Wwq24104177')" class="copy">迷航代打联系WX: Wwq24104177 (点击复制)</p>-->
       <!-- <p @click="copy('Liang-JL18')" class="copy">迷航代打联系WX: Liang-JL18 (点击复制)</p> -->
-<!--      <p @click="copy('AprTau-ll')" class="copy">迷航代打联系WX: AprTau-ll (点击复制)</p>-->
+      <!--      <p @click="copy('AprTau-ll')" class="copy">迷航代打联系WX: AprTau-ll (点击复制)</p>-->
       <!-- <p @click="copy('Miss_Fortunes')" class="copy">迷航代打联系WX: Miss_Fortunes (点击复制)</p> -->
     </div>
     <!-- 水印 -->
@@ -60,23 +60,8 @@
 </template>
 
 <script>
-import MODEL_DATA from '../model/data.js'
-
-const predefinedTypes = [
-  "眩晕力场",
-  "吸附力场",
-  "飞刺力场",
-  "辐射力场",
-  "魔力祭祀",
-  "科学力量",
-  "异常专家",
-  "通用力场",
-  "神灯赐福",
-  "超级星推官",
-  "流派大师",
-  "狂暴丽影",
-  "诡秘绅士",
-];
+import MODEL_DATA from '@/model/data.js'
+import {predefinedTypes, predefinedGroups} from '@/model/constants'
 
 export default {
   data() {
@@ -127,7 +112,11 @@ export default {
             this.detailCardTreeStr += item[1].length + ':' + item[0] + ' '
           }
         })
-        this.detailCardTreeArray = this.detailCardTreeArray.filter(item => item[1].length > 0 && !['眩晕力场', '吸附力场', '飞刺力场', '辐射力场', '通用力场'].includes(item[0]))
+        let cardNumbers = Object.fromEntries(
+            Object.entries(predefinedGroups).map(([key, value]) => [key, Object.keys(value).map(Number)])
+        );
+        let cardNumbers8Combine = Object.keys(cardNumbers).filter(key => cardNumbers[key].includes(8))
+        this.detailCardTreeArray = this.detailCardTreeArray.filter(item => item[1].length > 0 && !cardNumbers8Combine.includes(item[0]))
       }
     }
 
