@@ -29,6 +29,12 @@ const routes = [
     component: (resolve) => require(['../views/hitter.vue'], resolve)
   },
   {
+    path: '/reward',
+    name: 'reward',
+    meta: { keepAlive: false },
+    component: (resolve) => require(['../views/reward.vue'], resolve)
+  },
+  {
     path: '**',
     redirect: '/'
   }

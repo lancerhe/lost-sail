@@ -11,11 +11,11 @@
           {{ item }}
         </li>
         <li>已选：{{ allCardArray.length }} 张</li>
-        <li style="clear: both; visibility: hidden"></li>
+        <li @click="handleToDetail" class="view">生成卡组</li>
         <li @click="viewCardDesc" class="desc">卡组特效</li>
         <li @click="handleClear" class="reset">重置卡牌</li>
-        <li @click="handleToDetail" class="view">生成卡组</li>
         <li @click="handleHitter" class="reset">迷航代打+V</li>
+        <li @click="handleReward" class="reset">赞助支持</li>
         <li style="clear: both; visibility: hidden"></li>
       </ul>
 
@@ -285,6 +285,11 @@ export default {
     handleHitter() {
       this.$router.push({
         path: '/hitter'
+      })
+    },
+    handleReward() {
+      this.$router.push({
+        path: '/reward'
       })
     },
     viewCardDesc() {
