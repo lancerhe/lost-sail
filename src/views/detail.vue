@@ -25,7 +25,7 @@
     </div>
     <div class="desc">
       <p class="str">{{ detailCardTreeStr }}</p>
-      <p @click="copy('JNJieni888')" class="copy">迷航代打联系WX: JNJieni888 (点击复制)</p>
+      <p @click="copy('Lancer_He')" class="copy">特殊服务联系作者WX: Lancer_He (点击复制)</p>
       <p @click="copy('C2022129')" class="copy">迷航代打联系WX: C2022129 (点击复制)</p>
       <!--      <p @click="copy('yeah852019')" class="copy">迷航代打联系WX: yeah852019 (点击复制)</p>-->
       <p @click="copy('xhk840144874')" class="copy">迷航代打联系WX: xhk840144874 (点击复制)</p>
@@ -77,7 +77,7 @@ export default {
       drawer: true,
       maskDiv: {}, //当前显示的水印div节点DOM对象
       initProps: {
-        inputText: "1949丶迷航代 22丶夯技师", //显示的水印文本
+        inputText: "22区丶夯技师", //显示的水印文本
         width: "280", // 单个水印的宽度
         height: "100", // 单个水印的宽度
         fillStyle: "rgb(112, 113, 114, 0.4)", // 水印颜色

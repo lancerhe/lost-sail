@@ -18,15 +18,14 @@
         <el-tag size="small" effect="dark" type="danger"> 通天代 </el-tag>
       </div> -->
 
-      <div @click="copy('JNJieni888')" class="copy">
-        <img src="../assets/jieni.jpg">
-        WX: JNJieni888 (点击复制)
+      <div @click="copy('Lancer_He')" class="copy">
+        <img src="../assets/lancer.png">
+        WX: Lancer_He (点击复制)
       </div>
       <div class="tags">
-        <el-tag size="small" effect="dark" type=""> 金牌打手 </el-tag>
-        <el-tag size="small" effect="dark" type=""> 合金科学家 </el-tag>
-        <el-tag size="small" effect="dark" type="danger"> 通天代 </el-tag>
-        <el-tag size="small" effect="dark" type="danger"> 代抢机芯宝石 </el-tag>
+        <el-tag size="small" effect="dark" type=""> 缘分打手 </el-tag>
+        <el-tag size="small" effect="dark" type=""> 夯技师 </el-tag>
+        <el-tag size="small" effect="dark" type="danger"> 交易行助手 </el-tag>
       </div>
 
       <div @click="copy('C2022129')" class="copy">
