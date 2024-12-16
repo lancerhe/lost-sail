@@ -25,15 +25,11 @@
     </div>
     <div class="desc">
       <p class="str">{{ detailCardTreeStr }}</p>
-      <p @click="copy('Lancer_He')" class="copy">特殊服务联系作者WX: Lancer_He (点击复制)</p>
+      <p @click="copy('ouhsnus97')" class="copy">迷航代打联系WX: ouhsnus97 (点击复制)</p>
       <p @click="copy('C2022129')" class="copy">迷航代打联系WX: C2022129 (点击复制)</p>
-      <!--      <p @click="copy('yeah852019')" class="copy">迷航代打联系WX: yeah852019 (点击复制)</p>-->
-      <p @click="copy('xhk840144874')" class="copy">迷航代打联系WX: xhk840144874 (点击复制)</p>
-      <!--      <p @click="copy('Frown2024')" class="copy">迷航代打联系WX: Frown2024 (点击复制)</p>-->
-      <!--      <p @click="copy('hy-Lib-Oct-05')" class="copy">迷航代打联系WX: hy-Lib-Oct-05 (点击复制)</p>-->
-      <!--      <p @click="copy('Wwq24104177')" class="copy">迷航代打联系WX: Wwq24104177 (点击复制)</p>-->
+      <p @click="copy('qq974367827')" class="copy">迷航代打联系WX: qq974367827 (点击复制)</p>
+      <p @click="copy('Lancer_He')" class="copy">交易行相关业务联系作者</p>
       <!-- <p @click="copy('Liang-JL18')" class="copy">迷航代打联系WX: Liang-JL18 (点击复制)</p> -->
-      <!--      <p @click="copy('AprTau-ll')" class="copy">迷航代打联系WX: AprTau-ll (点击复制)</p>-->
       <!-- <p @click="copy('Miss_Fortunes')" class="copy">迷航代打联系WX: Miss_Fortunes (点击复制)</p> -->
     </div>
     <!-- 水印 -->
