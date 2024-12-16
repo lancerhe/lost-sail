@@ -28,6 +28,7 @@
       <p @click="copy('ouhsnus97')" class="copy">迷航代打联系WX: ouhsnus97 (点击复制)</p>
       <p @click="copy('C2022129')" class="copy">迷航代打联系WX: C2022129 (点击复制)</p>
       <p @click="copy('qq974367827')" class="copy">迷航代打联系WX: qq974367827 (点击复制)</p>
+      <p @click="copy('liguanyu3222')" class="copy">迷航代打联系WX: liguanyu3222 (点击复制)</p>
       <p @click="copy('Lancer_He')" class="copy">交易行相关业务联系作者</p>
       <!-- <p @click="copy('Liang-JL18')" class="copy">迷航代打联系WX: Liang-JL18 (点击复制)</p> -->
       <!-- <p @click="copy('Miss_Fortunes')" class="copy">迷航代打联系WX: Miss_Fortunes (点击复制)</p> -->

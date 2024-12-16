@@ -54,6 +54,13 @@
         <el-tag size="small" effect="dark" type="danger"> 通天代 </el-tag>
       </div>
 
+      <div @click="copy('liguanyu3222')" class="copy">
+        <img src="../assets/guanyu.png">
+        WX: liguanyu3222 (点击复制)
+      </div>
+      <div class="tags">
+        <el-tag size="small" effect="dark" type=""> 金牌打手 </el-tag>
+      </div>
 
 <!--      <div @click="copy('Frown2024')" class="copy">-->
 <!--        <img src="../assets/wuge.jpg">-->
