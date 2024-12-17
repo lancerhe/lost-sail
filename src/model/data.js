@@ -101,7 +101,7 @@ export default [
     },
     {
         "id": "11",
-        "file": "https://static.tool4seller.cn/upload/images/ls/6/06.png",
+        "file": "https://static.tool4seller.cn/upload/images/ls/6/11.png",
         "name": "战术撤退",
         "types": [
             "机械领主",
