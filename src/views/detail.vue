@@ -24,14 +24,16 @@
       </div>
     </div>
     <div class="desc">
+      <p class="copy">迷航代打联系WX: </p>
+      <p @click="copy('ouhsnus97')" class="copy left">ouhsnus97 (点击复制)</p>
+      <p @click="copy('C2022129')" class="copy left">C2022129 (点击复制)</p>
+      <p @click="copy('qq974367827')" class="copy left">qq974367827 (点击复制)</p>
+      <p @click="copy('liguanyu3222')" class="copy left">liguanyu3222 (点击复制)</p>
+      <div style="clear: both"></div>
+      <p class="copy left">交易行业务联系作者WX: </p>
+      <p @click="copy('Lancer_He')" class="copy left">Lancer_He (点击复制)</p>
+      <div style="clear: both"></div>
       <p class="str">{{ detailCardTreeStr }}</p>
-      <p @click="copy('ouhsnus97')" class="copy">迷航代打联系WX: ouhsnus97 (点击复制)</p>
-      <p @click="copy('C2022129')" class="copy">迷航代打联系WX: C2022129 (点击复制)</p>
-      <p @click="copy('qq974367827')" class="copy">迷航代打联系WX: qq974367827 (点击复制)</p>
-      <p @click="copy('liguanyu3222')" class="copy">迷航代打联系WX: liguanyu3222 (点击复制)</p>
-      <p @click="copy('Lancer_He')" class="copy">交易行相关业务联系作者</p>
-      <!-- <p @click="copy('Liang-JL18')" class="copy">迷航代打联系WX: Liang-JL18 (点击复制)</p> -->
-      <!-- <p @click="copy('Miss_Fortunes')" class="copy">迷航代打联系WX: Miss_Fortunes (点击复制)</p> -->
     </div>
     <!-- 水印 -->
     <div class="waterMask"></div>
@@ -371,18 +373,23 @@ header {
 }
 
 .desc .str {
-  font-size: 15px;
+  font-size: 14px;
   color: red;
-  padding: 0 25px;
+  padding: 10px 20px 0px 20px;
 }
 
 .desc .copy {
-  padding-left: 25px;
-  margin-top: 7px;
-  font-size: 17px;
+  padding-left: 20px;
+  margin-top: 5px;
+  font-size: 14px;
   z-index: 10;
   position: relative;
   color: #409EFF;
+}
+
+.desc .left {
+  width: 50%;
+  float: left;
 }
 
 .waterMask {

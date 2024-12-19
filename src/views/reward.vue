@@ -6,8 +6,9 @@
       <span></span>
     </header>
 
-    <div style="margin-top: 20%">
-      <img style="width: 80%" src="../assets/rewards.png">
+    <div style="margin-top: 10%">
+      <img style="width: 80%" src="../assets/rewards-1.png">
+      <img style="width: 80%" src="../assets/rewards-2.png">
     </div>
   </div>
 </template>
