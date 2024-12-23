@@ -29,7 +29,7 @@
 
       <div @click="copy('ouhsnus97')" class="copy">
         <img src="../assets/baixi.png">
-        WX: C2022129 (点击复制)
+        WX: ouhsnus97 (点击复制)
       </div>
       <div class="tags">
         <el-tag size="small" effect="dark" type=""> 金牌打手 </el-tag>
@@ -61,67 +61,6 @@
       <div class="tags">
         <el-tag size="small" effect="dark" type=""> 金牌打手 </el-tag>
       </div>
-
-<!--      <div @click="copy('Frown2024')" class="copy">-->
-<!--        <img src="../assets/wuge.jpg">-->
-<!--        WX: Frown2024 (点击复制)-->
-<!--      </div>-->
-<!--      <div class="tags">-->
-<!--        <el-tag size="small" effect="dark" type=""> 金牌打手 </el-tag>-->
-<!--        <el-tag size="small" effect="dark" type="danger"> 通天代 </el-tag>-->
-<!--      </div>-->
-
-
-<!--      <div @click="copy('Wwq24104177')" class="copy">-->
-<!--        <img src="../assets/ttd.jpg">-->
-<!--        WX: Wwq24104177 (点击复制)-->
-<!--      </div>-->
-<!--      <div class="tags">-->
-<!--        <el-tag size="small" effect="dark" type=""> 金牌打手 </el-tag>-->
-<!--        <el-tag size="small" effect="dark" type=""> IOS </el-tag>-->
-<!--        <el-tag size="small" effect="dark" type="danger"> 真 * 通天代 </el-tag>-->
-<!--      </div>-->
-
-<!--      <div @click="copy('hy-Lib-Oct-05')" class="copy">-->
-<!--        <img src="../assets/laobiao.jpg">-->
-<!--        WX: hy-Lib-Oct-05 (点击复制)-->
-<!--      </div>-->
-<!--      <div class="tags">-->
-<!--        <el-tag size="small" effect="dark" type=""> 金牌打手 </el-tag>-->
-<!--        <el-tag size="small" effect="dark" type="danger"> 通天代 </el-tag>-->
-<!--      </div>-->
-
-
-      <!-- <div @click="copy('Liang-JL18')" class="copy">
-        <img src="../assets/boss.jpg">
-        WX: Liang-JL18 (点击复制)
-      </div>
-      <div class="tags">
-        <el-tag size="small" effect="dark" type=""> 金牌打手 </el-tag>
-        <el-tag size="small" effect="dark" type=""> 卡关高手 </el-tag>
-        <el-tag size="small" effect="dark" type="danger"> 无敌大魔王 </el-tag>
-      </div> -->
-
-
-<!--      <div @click="copy('AprTau-ll')" class="copy">-->
-<!--        <img src="../assets/taidu.jpg">-->
-<!--        WX: AprTau-ll (点击复制)-->
-<!--      </div>-->
-<!--      <div class="tags">-->
-<!--        <el-tag size="small" effect="dark" type=""> 国服第一 </el-tag>-->
-<!--        <el-tag size="small" effect="dark" type="danger"> 小代 </el-tag>-->
-<!--      </div>-->
-
-
-      <!-- <div @click="copy('Miss_Fortunes')" class="copy">
-        <img src="../assets/mihangdai.jpg">
-        WX: Miss_Fortunes (点击复制)
-      </div>
-      <div class="tags no-border">
-        <el-tag size="small" effect="dark" type=""> 只接彩金 </el-tag>
-        <el-tag size="small" effect="dark" type=""> IOS 安卓双端 </el-tag>
-        <el-tag size="small" effect="dark" type="danger"> 晚间活跃 </el-tag>
-      </div> -->
     </div>
   </div>
 </template>
