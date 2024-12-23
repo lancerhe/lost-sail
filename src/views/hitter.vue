@@ -52,6 +52,7 @@
       <div class="tags">
         <el-tag size="small" effect="dark" type=""> 合金第一猛 </el-tag>
         <el-tag size="small" effect="dark" type="danger"> 通天代 </el-tag>
+        <el-tag size="small" effect="dark" type="danger"> 抖音钢头 </el-tag>
       </div>
 
       <div @click="copy('liguanyu3222')" class="copy">
