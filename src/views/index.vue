@@ -96,7 +96,7 @@ export default {
       drawer: true,
       maskDiv: {}, //当前显示的水印div节点DOM对象
       initProps: {
-        inputText: "1949丶迷航代 22丶夯技师", //显示的水印文本
+        inputText: "22区丶夯技师", //显示的水印文本
         width: "280", // 单个水印的宽度
         height: "100", // 单个水印的宽度
         fillStyle: "rgb(112, 113, 114, 0.4)", // 水印颜色
