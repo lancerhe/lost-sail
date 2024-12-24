@@ -34,6 +34,7 @@
       <p @click="copy('Lancer_He')" class="copy left">Lancer_He (点击复制)</p>
       <div style="clear: both"></div>
       <p class="str">{{ detailCardTreeStr }}</p>
+      <p class="copy" @click="createCopy" v-if="isDev">拷贝</p>
     </div>
     <!-- 水印 -->
     <div class="waterMask"></div>
@@ -65,6 +66,7 @@ import {predefinedTypes, predefinedGroups} from '@/model/constants'
 export default {
   data() {
     return {
+      isDev: process.env.NODE_ENV !== 'production',
       cardData: MODEL_DATA,
       detailCardTreeArray: [],
       otherCardTreeArray: [],
@@ -85,6 +87,8 @@ export default {
       },
       inputAllowDele: false,
       inputDestroy: false,
+      author: '',
+      name: '',
       // 密码
       // showKeyboard: true,
       // value: '',
@@ -92,16 +96,15 @@ export default {
     }
   },
   created() {
-    let query = ''
-    let str = ''
+    let ids = ''
+    let params;
     const hash = window.location.hash
     if (hash.includes('?')) {
-      str = hash.split('?')[1]
-      query = str.split('=')[1].split(',')
-      console.log(query)
+      params = new URLSearchParams(hash.split('?')[1]);
+      ids = params.get('ids');
     }
-    if (query.length > 0) {
-      this.clacCard(query)
+    if (ids !== '') {
+      this.clacCard(params.get("author"), params.get("name"), ids)
     } else {
       const detailCardTreeArray = window.localStorage.detailCardTreeArray
       if (detailCardTreeArray) {
@@ -149,7 +152,12 @@ export default {
     //   this.value = this.value.slice(0, this.value.length - 1);
     // },
     // 卡牌数据处理
-    clacCard(query) {
+    clacCard(author, name, query) {
+      this.author = author;
+      this.name = name;
+      this.showTitle = true;
+      this.cardName = name + " - " + this.author;
+      this.initProps.inputText = this.initProps.inputText + " & " + this.author;
       const cardArray = MODEL_DATA.filter(item => query.includes(item.id))
       console.log(cardArray);
       cardArray.forEach((item) => {
@@ -175,7 +183,7 @@ export default {
           this.detailCardTreeStr += item[1].length + ':' + item[0] + ' '
         }
       })
-      this.detailCardTreeArray = this.detailCardTreeArray.filter(item => item[1].length > 0 && !['眩晕力场', '吸附力场', '飞刺力场', '辐射力场', '通用力场'].includes(item[0]))
+      this.detailCardTreeArray = this.detailCardTreeArray.filter(item => item[1].length > 0 && !["肃烈金", "无根木", "浮生水", "燎原火", "承坤土"].includes(item[0]))
     },
     init() {
       let canvas = document.createElement("canvas");
@@ -237,9 +245,24 @@ export default {
       }
     },
     handleBack() {
-      this.$router.push({path: '/index'})
+      this.$router.go(-1)
     },
-
+    createCopy() {
+      const detailCardTreeArray = window.localStorage.detailCardTreeArray
+      if (detailCardTreeArray) {
+        let arr = JSON.parse(detailCardTreeArray)
+        let ids = [];
+        arr.forEach((item) => {
+          if (item[1].length > 0) {
+            item[1].forEach((i) => {
+              ids.push(i.split('/').pop().replace(".png", ""))
+            })
+          }
+        })
+        ids = ids.filter((item, index) => ids.indexOf(item) === index);
+        console.log("ids=" + ids.join(","));
+      }
+    },
     // 检测是否iOS端
     iosAgent() {
       return navigator.userAgent.match(/(iPhone|iPod|iPad);?/i);

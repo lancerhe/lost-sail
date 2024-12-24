@@ -14,8 +14,8 @@
         <li @click="handleToDetail" class="view">生成卡组</li>
         <li @click="viewCardDesc" class="desc">卡组特效</li>
         <li @click="handleClear" class="reset">重置卡牌</li>
-        <li @click="handleHitter" class="reset">迷航代打+V</li>
         <li @click="handleReward" class="reset">赞助支持</li>
+        <li @click="handleHitter" class="recommend">精选卡组</li>
         <li style="clear: both; visibility: hidden"></li>
       </ul>
 
@@ -410,6 +410,12 @@ header {
   color: #333;
   border: 1px solid #aaa;
   margin-bottom: 8px;
+}
+
+.card-nav .recommend {
+  background: #2c3e50;
+  color: #fff;
+  border: 1px solid #2c3e50;
 }
 
 .card-nav .reset {
