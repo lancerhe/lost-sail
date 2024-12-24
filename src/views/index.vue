@@ -450,21 +450,20 @@ header {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  padding: 5px 0 0 5px;
   transition: height 2s;
   position: relative;
   z-index: 10;
 }
 
 .card-item {
-  width: 21%;
-  height: 120px;
-  margin-bottom: 10px;
-  margin-right: 14px;
+  width: 23%;
+  margin: 5px 1%;
+//margin-bottom: 10px;
+  //margin-right: 10px;
 }
 
 .card-list .active {
-  box-shadow: 0px 0px 2px 4px #ff2d51;
+  box-shadow: 0px 0px 1px 2px #ff2d51;
 }
 
 .card-img {
